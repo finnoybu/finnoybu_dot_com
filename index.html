@@ -5,7 +5,7 @@
    (C) 2013 by Timo Dörr and contributors. This software is licensed
    under the terms of the GNU GPLv3 with additional terms applied.
    See https://github.com/Dynalon/mdwiki/blob/master/LICENSE.txt for more detail.
-   See http://github.com/Dynalon/mdwiki for a copy of the source code.
+   See https://github.com/Dynalon/mdwiki for a copy of the source code.
 -->
 
 <head>
@@ -1529,7 +1529,7 @@
                 }, $.md.prepareLink = function(a, b) {
                     b = b || {};
                     var c = window.location.protocol;
-                    return b.forceSSL ? "https://" + a : b.forceHTTP ? "http://" + a : "file:" === c ? "http://" + a : "//" + a
+                    return b.forceSSL ? "https://" + a : b.forceHTTP ? "https://" + a : "file:" === c ? "https://" + a : "//" + a
                 }, $.md.linkGimmick = function(a, b, c, d) {
                     void 0 === d && (d = "gimmick");
                     var e = new LinkTrigger({
@@ -1847,7 +1847,7 @@
 
                 function m() {
                     var b = "";
-                    b += '<hr><div class="scontainer">', b += '<div class="pull-right md-copyright-footer"> ', b += '<span id="md-footer-additional"></span>', b += 'Website generated with <a href="http://www.mdwiki.info">MDwiki</a> ', b += "&copy; Timo D&ouml;rr and contributors. ", b += "</div>", b += "</div>";
+                    b += '<hr><div class="scontainer">', b += '<div class="pull-right md-copyright-footer"> ', b += '<span id="md-footer-additional"></span>', b += 'Website generated with <a href="https://www.mdwiki.info">MDwiki</a> ', b += "&copy; Timo D&ouml;rr and contributors. ", b += "</div>", b += "</div>";
                     var c = a(b);
                     c.css("position", "relative"), c.css("margin-top", "1em"), a("#md-all").append(c)
                 }
@@ -1991,7 +1991,7 @@
                                 identifier: ""
                             },
                             f = a.extend(e, d),
-                            g = a('<div id="disqus_thread" class="md-external md-external-noheight md-external-nowidth" ><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div>');
+                            g = a('<div id="disqus_thread" class="md-external md-external-noheight md-external-nowidth" ><a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div>');
                         return g.css("margin-top", "2em"), b.each(function(b, d) {
                             if (c !== !0) {
                                 c = !0;
@@ -2001,7 +2001,7 @@
                                     var a, b = window.location.href;
                                     a = f.identifier.length > 0 ? f.identifier : b;
                                     var c = document.createElement("script");
-                                    c.type = "text/javascript", c.async = !0, c.src = "http://" + h + ".disqus.com/embed.js", (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(c)
+                                    c.type = "text/javascript", c.async = !0, c.src = "https://" + h + ".disqus.com/embed.js", (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(c)
                                 }())
                             }
                         })
@@ -2185,7 +2185,7 @@
                     }
                 })
             }
-            var d = "http://maps.google.com/maps/api/js?sensor=false&callback=googlemapsReady",
+            var d = "https://maps.google.com/maps/api/js?sensor=false&callback=googlemapsReady",
                 e = {
                     name: "googlemaps",
                     version: a.md.version,
@@ -2376,7 +2376,7 @@
                             i = a("<a>Use default</a>");
                         i.click(function(a) {
                             a.preventDefault(), window.localStorage.removeItem("theme"), window.location.reload()
-                        }), h.append(i), g.eq(1).append(h), g.eq(1).append('<li class="divider" />'), g.eq(1).append('<li><a href="http://www.bootswatch.com">Powered by Bootswatch</a></li>'), e.replaceWith(g)
+                        }), h.append(i), g.eq(1).append(h), g.eq(1).append('<li class="divider" />'), g.eq(1).append('<li><a href="https://www.bootswatch.com">Powered by Bootswatch</a></li>'), e.replaceWith(g)
                     })
                 },
                 i = function(b) {
@@ -2424,7 +2424,7 @@
                         if (e && 11 === e[1].length) {
                             var f = e[1],
                                 g = a('<iframe class="md-external" frameborder="0" allowfullscreen></iframe>');
-                            g.attr("src", "http://youtube.com/embed/" + f), b.replaceWith(g)
+                            g.attr("src", "https://youtube.com/embed/" + f), b.replaceWith(g)
                         }
                     }
                 })
@@ -2452,7 +2452,7 @@
                     e = a.extend({}, d, c);
                 return b.each(function(b, c) {
                     var d = a(c),
-                        f = "http://yuml.me/diagram/",
+                        f = "https://yuml.me/diagram/",
                         g = d.attr("href"),
                         h = d.attr("title");
                     h = h ? h : "", g = g.replace(new RegExp("`", "g"), "(").replace(new RegExp("´", "g"), ")"), f += e.style + ";dir:" + e.direction + ";scale:" + e.scale + "/" + e.type + "/" + g;
